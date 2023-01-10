@@ -3,6 +3,8 @@ export class Card {
   _success = false
 
   constructor(container, cardNumber, flip) {
+    this.container = container
+    this.cardNumber = cardNumber
     this.card = document.createElement("div")
     this.card.classList.add("card")
     this.card.textContent = cardNumber
@@ -18,6 +20,7 @@ export class Card {
   }
 
   set open(value) {
+    this._open = value
     value ? this.card.classList.add("open") : this.card.classList.remove("open")
   }
 
