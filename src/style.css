@@ -1,39 +1,32 @@
-.hide {
-  display: none;
-}
-
 .container {
   padding-top: 20px;
   text-align: center;
 }
 
-.lead {
-  text-align: center;
-}
-
-.row {
+.game {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .card {
   margin: 5px;
   width: 80px;
   height: 80px;
-  color: aquamarine;
-  background-color: aquamarine;
   font-size: 50px;
   line-height: 80px;
-  border: 2px solid #333333;
+  color: transparent;
+  background-color: aquamarine;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
 }
 
-.open,
-.guessed {
+.card.open {
   color: #000000;
   background-color: #ffffff;
 }
 
-.timer {
-  text-align: center;
-  font-size: 30px;
+.card.success {
+  background-color: rgb(201, 224, 216);
+  transform: scale(0.95);
 }

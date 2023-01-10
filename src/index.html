@@ -15,52 +15,11 @@
     <script src="index.js" type="module" defer></script>
   </head>
   <body>
-    <section class="container">
-      <div class="intro" id="intro-container">
-        <div class="row g-3 mt-5" id="form">
-          <p class="lead">
-            Укажите количество карточек по вертикали и горизонтали (чётное, не
-            больше 10-ти)
-          </p>
-          <div class="col-auto">
-            <input
-              class="form-control"
-              type="number"
-              id="width-select"
-              placeholder="По горизонтали"
-            />
-          </div>
-          <div class="col-auto">
-            <input
-              class="form-control"
-              type="number"
-              id="height-select"
-              placeholder="По вертикали"
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3" id="start-btn">
-              Начать игру
-            </button>
-          </div>
-        </div>
+    <main>
+      <div class="container">
+        <h1>Игра пары</h1>
+        <div class="game" id="game"></div>
       </div>
-      <div class="hide container" id="game-container">
-        <div class="field-body" id="field-body"></div>
-        <div class="col-auto">
-          <p class="timer" id="timer"></p>
-        </div>
-        <div class="btn-group" role="group">
-          <div class="col-auto">
-            <button type="button" class="hide btn btn-danger" id="btn-again">
-              Сыграть ещё раз
-            </button>
-            <button type="button" class="btn btn-warning" id="back-btn">
-              В меню
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    </main>
   </body>
 </html>
