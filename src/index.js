@@ -1,4 +1,5 @@
 import { Card } from "./scripts/Card.js"
+import shuffle from "./scripts/shuffle.js"
 
 const newGame = (container, count, arr) => {
   // Создать поле
@@ -11,7 +12,7 @@ const newGame = (container, count, arr) => {
     arr.push(i)
   }
 
-  arr = arr.sort(() => Math.random() - 0.5)
+  arr = shuffle(arr)
 
   // Логика игры
   const flip = card => {
